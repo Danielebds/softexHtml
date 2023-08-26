@@ -1,29 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            background-image: url('nnnoise.svg');
+        }
+
+        h3 {
+            font-family: 'Poppins', sans-serif;
+            color: purple;
+        }
+        p{
+            font-family: 'Lato', sans-serif;
+            color: rgb(0, 0, 0);
+            text-align: justify;
+        }
+    </style>
 </head>
 <body>
-    
+    <H1>Conhecendo o HTML e sua estrutura básica</H1>
+    <br>
+    <h3>
+        01) O que é o HTML e qual é o seu papel na construção de páginas web? Descreva brevemente a estrutura básica de
+        documento de html.
+    </h3>
+    <p>
+        HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e
+        a estrutura do conteúdo da web.
+    </p>
+    <br>
+    <h3>
+        02) Como o HTML se relaciona com outras tecnologias da web, como o CSS e o JavaScript? Como essas três
+        tecnologias trabalham em conjunto para criar páginas web interativas e estilizadas?
+    </h3>
+    <br>
+    <p>
+        HTML, CSS e JavaScript são tecnologias essenciais para a criação de páginas web interativas e estilizadas. O
+        HTML define a estrutura e semântica do conteúdo, o CSS controla a aparência visual e o layout, e o JavaScript
+        adiciona interatividade e dinamismo à página. Trabalhando juntos, o HTML estabelece a base estrutural, o CSS
+        aplica estilos visuais e o JavaScript permite respostas a eventos e manipulação do conteúdo em tempo real. Essas
+        tecnologias combinadas possibilitam a criação de páginas web completas, atraentes e funcionais.
+        <hr>
+    </p>
+    <h1>Identificando tags HTML básicas</h1>
+    <h3>
+        01)Cite três tags HTML básicas e explique o propósito de cada uma delas. Dê exemplos de situações em que você as
+        usaria ao construir uma página web.
+    </h3>
+    <br>
+    <p>
+        Serve para criar um titulo de tamanho maior
+    </p>
+    <pre>
+        &#60;h1&#62;Softex&#60;h1&#47;&#62;
+    </pre>
+    <br>
+    <p>Serve para inserir imagens</p>
+    <pre>
+        &#60;img src="" alt=""&#62;
+    </pre>
+    <br>
+    <p>Serve para criar um parágrafo</p>
+    <pre>
+        &#60;p&#62;Conteúdo&#60;p&#47;&#62;
+    </pre>
+    <h3>
+        02) Além das tags mencionadas, qual é a importância das tags de listage &#60;ul&#62;e &#60;ol&#62; no contexto
+        da estruturação de conteúdo em uma página? Dê exemplos de quando você escolheria
+        uma sobre a outra.
+    </h3>
+    <br>
+    <p>
+        As tags de listagem &#60;ul&#62; (lista não ordenada) e &#60;ol&#62; (lista ordenada) são fundamentais para a
+        estruturação de conteúdo em páginas web. Elas organizam informações de forma hierárquica e compreensível. A tag
+        &#60;ul&#62; é usada para listas em que a ordem não é relevante, apresentando itens com bullets ou símbolos. Por
+        outro lado, a tag &#60;ol&#62; é empregada quando a ordem dos itens é importante, numerando-os sequencialmente.
+        A escolha entre essas tags depende se a ordem dos itens é significativa ou não.
+    </p>
+    <hr>
+    <h1>Vinculando páginas, arquivos e âncoras</h1>
+    <h3>
+        01) Como a tag &#60;a&#62; é utilizada para criar links em HTML? Explique como você pode vincular para outras
+        páginas, para arquivos locais e criar âncoras dentro de uma página.
+    </h3>
+    <br>
+    <p>
+        O elemento &#60;a&#62; em HTML (ou elemento âncora), com o atributo href cria-se um hiperligação nas páginas
+        web, arquivos, endereços de emails, ligações na mesma página ou endereços na URL. O conteúdo dentro de cada &#60;a&#62; precisará indicar o destino do link.
+    </p>
+    <br>
+    <h3>
+        02)Além do atributo href, quais outros atributos importantes a tag <a> pode ter? Como o atributo target pode ser usado para controlar como o link é aberto pelo navegador?
+    </h3>
+    <br>
+    <p>
+        A tag <a> em HTML é usada para criar links e pode conter vários atributos importantes além do href. O atributo target é especialmente relevante, permitindo controlar como o link é aberto pelo navegador. Os valores comuns para o atributo target incluem _blank (nova janela), _self (mesma janela), _parent (contexto pai) e _top (topo da hierarquia de frames). O atributo title oferece uma dica quando o mouse passa sobre o link, o rel define a relação entre páginas e o download transforma o link em um link de download. CSS também pode ser usado para estilizar os links visualmente.
+    </p>
+    <hr>
+    <h1>Incorporando imagens e mídias</h1>
+    <h3>
+        01)Descreva a diferença entre os atributos src e alt em relação à tag <img>. Por que é importante fornecer um
+        atributo alt adequado para imagens?
+    </h3>
+    <br>
+    <p>
+        A tag &#60;img&#62;em HTML é usada para incorporar imagens em uma página da web. Os atributos src e alt são
+        essenciais nessa tag. O atributo src define o URL da imagem a ser exibida, enquanto o atributo alt fornece um
+        texto alternativo que é mostrado quando a imagem não pode ser carregada ou para usuários de leitores de tela. O
+        texto alternativo é crucial para acessibilidade, SEO e experiência do usuário, garantindo que o conteúdo das
+        imagens seja compreendido por todos, independentemente das limitações de acesso.
+    </p>
+    <br>
+    <h3>
+        02)Além de imagens, quais outros tipos de mídia podem ser incorporados em uma página HTML? Como você pode
+        garantir que a mídia incorporada seja responsiva e se ajuste bem em dispositivos?
+    </h3>
+    <br>
+    <p>
+        Dentro de uma página HTML, além de imagens, é possível incorporar diversos tipos de mídia, como vídeos, áudios,
+        animações e mapas interativos. Isso enriquece o conteúdo e proporciona uma experiência mais dinâmica aos
+        usuários. Para assegurar que a mídia incorporada seja responsiva e se adapte bem a diferentes dispositivos, é
+        recomendado aplicar técnicas de design responsivo, como utilizar CSS flexível, definir larguras máximas, usar
+        media queries e proporções flexíveis. Essas práticas garantem que a mídia seja exibida de forma apropriada,
+        independentemente do tamanho da tela do dispositivo utilizado.
+    </p>
+    <hr>
+    <h1>Criando tabelas básicas</h1>
+    <h3>
+        01)Quais são as principais tags usadas para criar tabelas em HTML? Explique a diferença entre as tags
+        &#60;th&#62; e &#60;td&#62;, e quando você as usaria.
+
+    </h3>
+    <br>
+    <p>
+        As tags principais para criar tabelas em HTML são &#60;table&#62;, &#60;tr&#62;, &#60;th&#62; e &#60;td&#62;. A
+        tag &#60;table&#62; define a estrutura da tabela, a tag &#60;tr&#62; cria linhas na tabela, a tag &#60;th&#62; é
+        usada para criar células de cabeçalho que identificam o conteúdo das colunas, e a tag &#60;td&#62; cria células
+        de dados que apresentam informações reais na tabela.A diferença entre &#60;th&#62; e &#60;td&#62; é que
+        &#60;th&#62; é usado para cabeçalhos de coluna, geralmente em negrito e centralizado, enquanto &#60;td&#62; é
+        usado para dados reais da tabela, exibidos como texto padrão.Usar essas tags adequadamente ajuda a manter a
+        semântica da tabela e a acessibilidade do conteúdo. &#60;th&#62;ajuda a identificar colunas e &#60;td&#62;
+        apresenta os dados.
+    </p>
+    <h3>
+        02)Embora tabelas sejam usadas para exibir dados tabulares, às vezes é recomendado evitá-las em favor de outras
+        formas de apresentação de dados. Por quê? E quais são os cenários em que as tabelas são apropriadas?
+    </h3>
+    <br>
+    <p>
+        Embora as tabelas sejam ideais para exibir dados tabulares, em certos casos, é recomendado evitá-las em favor de
+        outras técnicas de apresentação de dados, devido a preocupações com acessibilidade, responsividade e manutenção.
+        Tabelas usadas para layout podem confundir leitores de tela, dificultar a responsividade e tornar a manutenção
+        mais complexa. No entanto, as tabelas são apropriadas para exibir dados organizados em colunas e linhas,
+        comparar informações lado a lado e apresentar dados relacionados de maneira clara. A escolha entre tabelas e
+        outras técnicas depende do contexto e das melhores práticas de design, acessibilidade e responsividade.
+    </p>
+    <hr>
+    <h1>Criando formulários</h1>
+    <h3>
+        01)Como a tag <form> é utilizada para criar formulários em HTML? Cite pelo menos três tipos diferentes de campos de entrada (&#60;input&#62;) que podem ser usados em um formulário.
+
+    </h3>
+    <br>
+    <p>
+        A tag &#60;form&#62; em HTML é usada para criar formulários, fornecendo uma área onde os usuários podem inserir e enviar
+        informações. Ela envolve elementos de entrada que coletam dados. Três tipos diferentes de campos de entrada
+        (&#60;input&#62;) que podem ser usados em um formulário são: &#60;input type="text"&#62;: Permite inserir texto simples, útil para coletar informações curtas como nomes.
+
+        &#60;input type="email"&#62;: Coleta endereços de email e valida seu formato.
+
+        &#60;input type="password"&#62;: Usado para inserir senhas, ocultando o texto digitado por asteriscos ou pontos.
+
+        Há muitos outros tipos de campos de entrada, como números, datas, caixas de seleção, botões de rádio, que servem para coletar diferentes tipos de dados dos usuários. A tag &#60;form&#62; é um elemento essencial para criar interações e coletar informações dos usuários em páginas da web.
+    </p>
+    <br>
+    <h3>
+        02)Além dos campos de entrada, quais outros elementos podem ser incluídos em um formulário para melhorar
+        a usabilidade e a experiência do usuário?
+    </h3>
+    <br>
+    <p>
+        Além dos campos de entrada, existem vários outros elementos que podem ser incluídos em um formulário
+        para melhorar a usabilidade e a experiência do usuário. Esses elementos podem auxiliar na orientação dos
+        usuários, fornecer feedback claro e facilitar a interação. Aqui estão alguns exemplos:
+        <br>
+        <br>
+        Rótulos Claros: Use elementos &#60;label&#62; para associar rótulos descritivos aos campos de entrada, ajudando os usuários a entenderem o propósito de cada campo.
+        <br>
+        <br>
+        Instruções: Forneça instruções claras acima ou ao lado dos campos de entrada para orientar os
+        usuários sobre o que é esperado em cada campo.
+        <br>
+        <br>
+        Mensagens de Erro e Validação: Mostre mensagens de erro imediatamente quando os usuários inserirem
+        dados incorretos ou faltantes. Isso ajuda a evitar envios inválidos e ajuda os usuários a corrigirem
+        os erros.
+        <br>
+        <br>
+        Dicas de Formatação: Fornecer dicas sobre o formato esperado para campos como datas, números de
+        telefone ou endereços de email pode ajudar os usuários a inserir os dados corretamente.
+        <br>
+        <br>
+        Botões de Ação Claros: Use botões com rótulos claros, como "Enviar", "Salvar" ou "Cancelar", para
+        que os usuários saibam o que acontecerá quando clicarem.
+        <br>
+        <br>
+        Barra de Progresso: Se o formulário for longo ou dividido em etapas, uma barra de progresso pode
+        mostrar visualmente onde os usuários estão no processo.
+        <br>
+        <br>
+        Auto-Preenchimento: Use atributos autocomplete nos campos de entrada para ajudar os usuários a
+        preencher campos automaticamente com base em informações anteriores.Campos Obrigatórios: Indique
+        claramente quais campos são obrigatórios, usando asteriscos ou ícones de indicação.
+        <br>
+        <br>
+        Checkboxes e Radio Buttons Intuitivos: Use checkboxes (caixas de seleção) e radio buttons (botões de
+        seleção) para opções múltiplas ou únicas, respectivamente. Forneça rótulos claros e agrupe opções
+        relacionadas.
+        <br>
+        <br>
+        Campos de Texto Expansíveis: Se os usuários precisam inserir informações mais longas, como
+        comentários, forneça campos de texto expansíveis, como &#60;textarea&#62;, para acomodar o conteúdo.
+        <br>
+        <br>
+        Recursos de Ajuda: Se o formulário exige informações específicas, você pode fornecer um link ou
+        ícone de ajuda para informações adicionais.
+        <br>
+        <br>
+        Confirmação de Dados: Em alguns casos, pode ser útil mostrar um resumo dos dados antes do envio,
+        para que os usuários possam revisar e confirmar suas entradas.
+        <br>
+        <br>
+        Barra de Pesquisa em Listas Longas: Se você tiver listas longas para seleção (como uma lista de
+        países), considere adicionar uma barra de pesquisa para facilitar a localização de itens.
+        <br>
+        <br>
+        Ícones Indicativos: Use ícones relevantes para fornecer indicativos visuais, como um ícone de
+        calendário para campos de data.
+        <br>
+        <br>
+        Ao adicionar esses elementos ao seu formulário, você cria uma experiência mais amigável e orientada
+        ao usuário, o que pode levar a envios mais precisos e a uma interação mais positiva no geral.
+    </p>
+    <hr>
+    <h1>Técnicas avançadas de estruturação com elementos HTML5 semânticos</h1>
+    <h3>
+        01)O que são elementos HTML5 semânticos e por que são importantes na estruturação de uma
+        página? Cite três exemplos de elementos semânticos e explique quando você os usaria.
+    </h3>
+    <p>
+        Elementos HTML5 semânticos são tags que têm um significado intrínseco e são usados para melhorar a
+        estruturação de páginas da web. Três exemplos são &#60;header&#62;, &#60;article&#62; e
+        &#60;footer&#62;. Eles são importantes porque:
+        <br>
+        <br>
+        Acessibilidade: Tornam a navegação mais eficiente para leitores de tela.
+        SEO: Ajudam mecanismos de busca a entender o conteúdo e melhoram a classificação nos resultados.
+        <br>
+        <br>
+        Manutenção: Tornam o código mais claro e fácil de ser mantido.
+        Interpretação: Facilitam a compreensão da intenção de cada parte da página por desenvolvedores e
+        designers.
+        <br>
+        <br>
+        Design Responsivo: Simplificam a criação de layouts responsivos.
+        Ao usar elementos semânticos, você comunica claramente a função de diferentes partes da página,
+        melhorando a experiência do usuário, acessibilidade e SEO.
+    </p>
+    <br>
+    <h3>
+        02)Além da semântica, como os elementos HTML5 podem afetar a acessibilidade das páginas web? Por
+        que é fundamental considerar a acessibilidade ao escolher elementos de estruturação?
+    </h3>
+    <br>
+    <p>
+        Os elementos HTML5 têm um impacto significativo na acessibilidade das páginas da web, além de sua função
+        semântica. A escolha adequada de elementos de estruturação afeta a forma como usuários com deficiências
+        interagem e compreendem o conteúdo. Elementos semânticos, como cabeçalhos hierárquicos, elementos de
+        formulário e links descritivos, melhoram a acessibilidade de várias maneiras:
+        <br>
+        <br>
+        Leitores de Tela: Interpretam os elementos para descrever o conteúdo aos usuários com deficiência
+        visual.
+        <br>
+        Ordem de Leitura: A ordem de leitura é mais coerente, facilitando a compreensão.
+        <br>
+        <br>
+        Cabeçalhos e Títulos: Organizam e hierarquizam o conteúdo para usuários de leitores de tela.
+        <br>
+        <br>
+        Acesso por Teclado: Melhoram a navegação para usuários com deficiências motoras.
+        <br>
+        <br>
+        Alternativas de Texto: Descrevem imagens para leitores de tela e usuários sem visão.
+        <br>
+        <br>
+        Links e Títulos: Fornecem informações claras sobre links e destino.
+        <br>
+        <br>
+        Formulários Acessíveis: Permitem interação eficaz para usuários com deficiência.
+        <br>
+        <br>
+        Ao considerar a acessibilidade ao escolher elementos de estruturação, você garante que o seu site seja
+        inclusivo e acessível para todos os usuários, proporcionando uma experiência mais rica e eficaz para
+        todos.
+    </p>
 </body>
+
 </html>
-
-/*
-Conhecendo o HTML e sua estrutura básica
-
-1. O que é o HTML e qual é o seu papel na construção de páginas web? Descreva brevemente a
-estrutura básica de um documento HTML.
-
-
-
-
-
-2. Como o HTML se relaciona com outras tecnologias da web, como o CSS e o JavaScript? Como essas
-três tecnologias trabalham em conjunto para criar páginas web interativas e estilizadas? */
-
-
-<form action=""></form>
-
-<video controls src="link do video"></video>
